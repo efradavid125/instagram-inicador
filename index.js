@@ -1,5 +1,5 @@
 var webdriver = require('selenium-webdriver'),
-    By = webdriver.By,
+    By = webdriver.By;
 
 var driver = new webdriver.Builder()
     .forBrowser('chrome')
