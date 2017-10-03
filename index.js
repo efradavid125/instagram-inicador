@@ -1,13 +1,11 @@
 var webdriver = require('selenium-webdriver'),
     By = webdriver.By,
-    until = webdriver.until;
 
 var driver = new webdriver.Builder()
     .forBrowser('chrome')
     .build();
 
  var user = require('./credentials');
- console.log(user);
 
 driver.get('https://www.instagram.com/?hl=es');
 driver.findElement(By.className('_b93kq')).click();
